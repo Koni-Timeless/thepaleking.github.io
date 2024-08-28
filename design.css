@@ -1,29 +1,88 @@
+
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;  
+  background-color: rgb(51, 50, 50);
+  color: white;
+  border-color: white;
+}
+
+.Home{
+  margin: 45px 45px;
+  padding: 30px;
+  font-size: 40px;
+  line-height: 80px;
+  background-color: transparent;
+  border:thick;
+  margin-top: 100px;
+  border: 1px solid ;
+}
+.name{
+  font-weight: 300;
+  color: rgb(134, 74, 255);;
 }
 
 li {
-    float: left;
-    display: block;
-    padding: 2px;
-  }
+  float: right;
+  display: block;
+  padding: 2px;
+}
+.icon{
+  float: left;
+  margin-top: none;
+}
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
- ul a{
-      
+ul a{
+    
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:inherit;
+  margin-top: 20px;
+    
+}
+
+ul a:hover{
+    opacity: 0.5;
+}  
+
+@media screen and (max-width: 600px) {
+  ul li.right, 
+  ul li {float: none;}
+  .icon {float:none; }
+  .icon img {
     display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color:inherit;
-      
+    margin-left: auto;
+    margin-right: auto;
   }
-  
- ul a:hover{
-      opacity: 0.5;
-  } 
+}
+
+
+.About , .Contact{
+  display: flex;
+}
+.skill_icon{
+      margin: 15px 15px;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+.skill-text{
+  line-height: 40px;
+  padding:50px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
